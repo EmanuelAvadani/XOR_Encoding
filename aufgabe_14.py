@@ -1,9 +1,5 @@
 import base64 
 
-#string_b = "databasepassword".encode('utf-8')
-#base64_bytes = base64.b64encode(string_b)
-
-#string_b_base64 = "ZGF0YWJhc2VwYXNzd29yZA==".encode('utf-8')
 
 def byte_xor(ba1, ba2):
     #return bytes(_a^_b for _a,_b in zip(ba1, ba2))
@@ -11,8 +7,9 @@ def byte_xor(ba1, ba2):
 
 #key = byte_xor(string_b, string_b_base64)
 
-text = "databasename"
+#text = "databasename"
 
+text = input("Bitte tragen Sie den zu verschlüssende String ein:\n")
 # key
 key = ";>+>=>,:/>,,(0-;"
 
@@ -32,11 +29,5 @@ x = ord("f")
 print(x) -> returns 102 as a int 
 
 https://dev.to/nullx33f/xor-encryption-in-python3-51c
-
-
-Output: 
-
-Decrypted pwd:  ________A_AI
-Encoded pwd:  b'Oz4rPj0+LDovPiwsKDAtOw=='
 
 """
