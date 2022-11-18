@@ -1,4 +1,5 @@
 import base64 
+import sys
 
 
 def byte_xor(ba1, ba2):
@@ -9,7 +10,7 @@ def byte_xor(ba1, ba2):
 
 #text = "databasename"
 
-text = input("Bitte tragen Sie den zu verschlüssende String ein:\n")
+text = sys.argv[1]
 # key
 key = ";>+>=>,:/>,,(0-;"
 
@@ -20,6 +21,8 @@ decrypted_text = byte_xor(text, key)
 
 print("Decrypted pwd: ", decrypted_text)
 print("Encoded pwd: ", base64.b64encode(key.encode('utf-8')))
+
+print('cmd entry:', sys.argv)
 
 """
 chr(integer_value) returns string representation of a character
